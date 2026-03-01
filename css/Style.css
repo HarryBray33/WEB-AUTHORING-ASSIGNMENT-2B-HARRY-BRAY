@@ -1,0 +1,691 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.index {
+    background-color: #615e55;
+}
+
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+/* Search bar */
+.search-bar {
+    display: flex;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 6px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 6px 10px;
+    cursor: pointer;
+}
+   
+
+/* Navigation */
+nav {
+    background-color: #222;
+    margin-top: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    display: block;
+    padding: 12px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #444;
+}
+
+.hero-image {
+    width: 100%;
+    max-height: 350px;
+    object-fit: cover;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+} 
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.35);
+} 
+
+.hero h1 {
+    position: relative;
+    color: white;
+    text-shadow: 0 0 15px rgba(0,0,0,0.8);
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    text-shadow:
+        0 0 5px rgba(0,0,0,0.8),
+        0 0 15px rgba(0,0,0,0.6);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 425px;
+    left: 55%;
+    transform: translateX(-50%) skewX(-10deg);
+    color: white;
+    background: rgb(0, 0, 0, 0.1);
+    padding: 50px 10px;
+    border-radius: 6px;
+
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size: 4.5rem;
+  font-weight: 800;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  color: #d1b376; 
+
+  font-family: 'Playfair Display', serif;
+
+  background: none;
+  padding: 0;
+
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.63);
+
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 80px;
+  min-height: 80vh;
+}
+
+.about-title {
+  width: 25%;
+}
+
+.about-title h1 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+  line-height: 1.2;
+}
+
+.about-text {
+  width: 40%;
+  padding: 40px;
+
+  border-left: 6px solid black;
+  border-right: 6px solid black;
+
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+.faq {
+  background-color: #51523e;
+}
+
+.faq-section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.faq-section h3 {
+  margin-top: 2em;
+  color: #000;           /* or your accent color */
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 8px;
+}
+
+.faq-section p, .faq-section ul {
+  line-height: 1.6;
+  margin: 1em 0;
+}
+
+.faq-section ul {
+  padding-left: 25px;
+}
+
+.faq-hero-background {
+  position: relative;
+  min-height: 100vh;               /* at least full screen height */
+  background-image: url('../images/guitardeed1.jpg');
+  background-size: cover;          /* fills the whole area */
+  background-position: center;     /* centers the image */
+  background-repeat: no-repeat;
+  background-attachment: fixed;    /* optional: parallax/fixed effect */
+}
+
+.faq-overlay {
+  background-color: rgba(52, 53, 50, 0.65);   /* semi-dark overlay – adjust 0.65 between 0.4–0.8 */
+  min-height: 100vh;
+  padding: 80px 20px 40px;
+  color: #ffffff;                  /* white text for contrast */
+}
+
+.faq-section {
+  max-width: 900px;
+  margin: 0 auto;
+  background: rgba(68, 68, 57, 0.678);   /* slight white tint box – optional */
+  padding: 30px;
+  border-radius: 12px;
+  backdrop-filter: blur(4px);             /* glassmorphism effect if browser supports */
+  box-shadow: 0 8px 32px rgba(74, 75, 67, 0.555);
+}
+
+.faq-section h1,
+.faq-section h3 {
+  color: #ffffff;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);  /* shadow helps readability */
+}
+
+.faq-section p,
+.faq-section ul {
+  color: #f0f0f0;
+  line-height: 1.7;
+}
+
+.contact {
+    background-color: #807d6d;
+}
+
+
+.contact-hero-background {
+    position: relative;
+    min-height: 100vh;                /* full viewport height */
+    background-image: url('../images/lostgeen.jpg');  /* ← change to your image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;    
+}
+
+.contact-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(93, 94, 79, 0.507); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.contact-section {
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+
+.contact-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 12px rgba(255, 255, 255, 0.7);
+    color: #ffffff;
+}
+
+.intro {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.795);
+    color: #ffffff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+input:focus, select:focus, textarea:focus {
+    box-shadow: 0 0 0 2px rgba(170, 4, 192, 0.4);  
+}
+
+button[type="submit"] {
+    background: none;
+    border: none;
+    color: #aaa;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 1rem;
+}
+
+button[type="submit"]:hover {
+    color: #ccc;
+}
+
+.about-overlay {
+     position: absolute;
+    inset: 0;
+    background: rgb(255, 0, 149); 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+
+}
+
+.about-section {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+    color: #000000;
+}
+
+.about-section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+    color: #00000096;
+}
+
+.about {
+    background-color: #807d6d;
+}
+
+.about {
+    background: linear-gradient(to right, #d8d2c2, #c7c0af);
+    min-height: 100vh;
+    font-family: 'Georgia', serif;
+}
+
+.about-title {
+    font-size: 60px;
+    color: #333;
+    letter-spacing: 3px;
+    text-shadow: 3px 3px 0px #b3ac9b;
+}
+
+.about-text {
+    background: #f5f2ea;
+    padding: 30px;
+    border-left: 6px solid #000;
+    border-right: 6px solid #000;
+    box-shadow: 0px 0px 20px rgba(0,0,0,0.2);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.about-text::before {
+    content: "ABOUT THE WEBSITE";
+    display: block;
+    font-size: 12px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    color: #777;
+}
+
+.unreleased {
+    background-color: #121212;
+    color: #f0f0f0;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.unreleased-section {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.unreleased-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #bbbbbb;
+    margin-bottom: 30px;
+}
+
+.unreleased-box {
+    background-color: #1e1e1e;
+    padding: 20px;
+    margin: 15px auto;
+    width: 60%;
+    border: 1px solid #333;
+}
+
+.unreleased {
+    background: radial-gradient(circle at top, #000000, #8b7201b7);
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.unreleased-section {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.unreleased-section h1 {
+    font-size: 38px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255,255,255,0.2);
+}
+
+.subtitle {
+    color: #888;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.unreleased-box {
+    background: linear-gradient(145deg, #1e1e1e, #111);
+    padding: 25px;
+    margin: 10px auto;
+    width: 60%;
+    border-left: 4px solid #ff2e63;
+    box-shadow: 0 0 15px rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+.unreleased-box h2 {
+    color: #ff2e63;
+    letter-spacing: 1px;
+}
+
+.unreleased-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(255,46,99,0.4);
+    border-left: 4px solid #ffffff;
+}
+
+.unreleased-box::before {
+    content: "UNRELEASED";
+    font-size: 10px;
+    letter-spacing: 3px;
+    color: #666;
+    display: block;
+    margin-bottom: 10px;
+}
+
+
+.trending {
+    background: radial-gradient(circle at top, #383700c9, #000000);
+    color: #ffffff;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.trending-section {
+    padding: 60px 80px;
+}
+
+.trending-section h1 {
+    font-size: 40px;
+    margin-bottom: 5px;
+    border-bottom: 2px solid #032031;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.trend-item:hover {
+    padding-left: 15px;
+    background-color: #000000;
+}
+
+.library {
+    background-color: #101010;
+    color: #eaeaea;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.library-layout {
+    display: flex;
+    padding: 60px;
+    gap: 50px;
+}
+
+.library-sidebar {
+    width: 25%;
+    border-right: 2px solid #333;
+    padding-right: 20px;
+}
+
+.library-sidebar h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.library-sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.library-sidebar li {
+    padding: 10px 0;
+    border-bottom: 1px solid #333;
+}
+
+.library-main {
+    width: 75%;
+}
+
+.library-main h1 {
+    margin-bottom: 10px;
+}
+
+.library-entry {
+    margin-top: 25px;
+    padding: 15px;
+    background-color: #ffffff44;
+    border-left: 4px solid #000000;
+}
+
+.artists-cinematic {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 80px 60px;
+}
+
+.artist-spotlight {
+    padding: 40px;
+    border-top: 2px solid #0c000c;
+    border-bottom: 2px solid #292c01;
+    text-align: center;
+    background: rgba(255,255,255,0.03);
+}
+
+.artists {
+    background: radial-gradient(circle at center, #5844049a, #000000);
+    color: white;
+    min-height: 100vh;
+}
+
+.artists-cinematic {
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    padding: 80px 60px;
+}
+
+.artist-spotlight {
+    padding: 13px;
+    border-top: 1px solid #49330aab;
+    border-bottom: 1px solid #000000ab;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.952);
+}
+
+.artist-spotlight p {
+    color: #ccc;
+    font-style: italic;
+}
+
+.history {
+    background: radial-gradient(circle at center, #ff7c01b9, #000000);
+    color: white;
+    min-height: 100vh;
+}
+
+.era {
+    min-width: 300px;
+    padding: 40px;
+    margin: 40px 20px;
+    background: rgba(0, 0, 0, 0.781);
+    border-bottom: 4px solid #000000;
+    box-shadow: 0 0 20px rgba(70, 4, 192, 0.1);
+    transition: 0.3s;
+}
+
+.era h2 {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #ffffff;
+}
+
+.era p {
+    color: #ffffff;
+}
+
+.era:hover {
+    background: rgb(184, 99, 2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.973);
+}
+
+/* MEDIA PAGE LAYOUT */
+
+.media-archive {
+    padding: 60px 80px;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* PAGE TITLE */
+
+.media-main h1 {
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+.media-main p {
+    color: #aaa;
+    margin-bottom: 40px;
+}
+
+/* AUDIO BLOCKS */
+
+.audio-block {
+    background: #444;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+    border-left: 3px solid #888;
+}
+
+.audio-block:hover {
+    background: #555;
+    border-left: 3px solid #fff;
+}
+
+/* BLOCK TEXT */
+
+.audio-block h4 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.audio-block p {
+    margin: 0;
+    color: #ccc;
+}
+
+.media {
+     background: radial-gradient(circle at center, #040e3bb9, #000000);
+    color: white;
+    min-height: 100vh;
+
+}
+
+
+.audio-block audio {
+    width: 100%;
+    margin-top: 15px;
+    filter: invert(1) brightness(0.8);
+    opacity: 0.9;
+    transition: 0.3s;
+}
+
+.audio-block audio:hover {
+    opacity: 1;
+}

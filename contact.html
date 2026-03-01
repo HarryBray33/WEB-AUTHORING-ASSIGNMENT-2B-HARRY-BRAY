@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="contact"></body>
+
+  <!-- Reuse the same header/nav as other pages -->
+  <header class="search-bar">
+    <input type="text" placeholder="Search...">
+  </header>
+
+   <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="unreleased.html">The Unreleased</a></li>
+      <li><a href="trending.html">Trending</a></li>
+      <li><a href="library.html">Library</a></li>
+      <li><a href="artists.html">Music Artists</a></li>
+      <li><a href="history.html">History</a></li>
+      <li><a href="media.html">Media</a></li>
+    </ul>
+  </nav>
+
+ <!-- contact.html – after your <nav> -->
+
+<div class="contact-hero-background">
+    <div class="contact-overlay">
+        <section class="contact-section">
+            <h1>Get in Touch</h1>
+            <p class="intro">If you have any questions, comments or feedback about this website fill this form down below!</p>
+
+            <form class="contact-form">
+                <div class="form-group">
+                    <input type="text" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Your Email" required>
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>General Inquiry</option>
+                        <option>Artist Submission</option>
+                        <option>Archive Question</option>
+                        <option>Collab / Feature</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Your Message..." rows="6" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+</div>
