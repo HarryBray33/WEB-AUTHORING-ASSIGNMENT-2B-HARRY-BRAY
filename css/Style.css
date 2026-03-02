@@ -245,7 +245,7 @@ nav ul li a:hover {
 .faq-section h1,
 .faq-section h3 {
   color: #ffffff;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);  
+  text-shadow: 1px 1px 4px rgba(217, 255, 0, 0.8); 
 }
 
 .faq-section p,
@@ -688,4 +688,5 @@ button[type="submit"]:hover {
 .audio-block audio:hover {
     opacity: 1;
 }
+
 
