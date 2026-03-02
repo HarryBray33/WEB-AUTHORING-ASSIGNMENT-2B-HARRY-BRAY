@@ -1,4 +1,4 @@
-/* Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -9,19 +9,19 @@
     background-color: #615e55;
 }
 
-/* Body */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f4f4;
 }
 
-/* Container */
+
 .container {
     width: 90%;
     margin: auto;
 }
 
-/* Header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -29,7 +29,7 @@ header {
     padding: 15px 0;
 }
 
-/* Search bar */
+
 .search-bar {
     display: flex;
     gap: 5px;
@@ -46,7 +46,6 @@ header {
 }
    
 
-/* Navigation */
 nav {
     background-color: #222;
     margin-top: 15px;
@@ -202,7 +201,7 @@ nav ul li a:hover {
 
 .faq-section h3 {
   margin-top: 2em;
-  color: #000;           /* or your accent color */
+  color: #000;          
   border-bottom: 1px solid #ddd;
   padding-bottom: 8px;
 }
@@ -218,35 +217,35 @@ nav ul li a:hover {
 
 .faq-hero-background {
   position: relative;
-  min-height: 100vh;               /* at least full screen height */
+  min-height: 100vh;              
   background-image: url('../images/guitardeed1.jpg');
-  background-size: cover;          /* fills the whole area */
-  background-position: center;     /* centers the image */
+  background-size: cover;         
+  background-position: center;    
   background-repeat: no-repeat;
-  background-attachment: fixed;    /* optional: parallax/fixed effect */
+  background-attachment: fixed;    
 }
 
 .faq-overlay {
-  background-color: rgba(52, 53, 50, 0.65);   /* semi-dark overlay – adjust 0.65 between 0.4–0.8 */
+  background-color: rgba(52, 53, 50, 0.65);   
   min-height: 100vh;
   padding: 80px 20px 40px;
-  color: #ffffff;                  /* white text for contrast */
+  color: #ffffff;                 
 }
 
 .faq-section {
   max-width: 900px;
   margin: 0 auto;
-  background: rgba(68, 68, 57, 0.678);   /* slight white tint box – optional */
+  background: rgba(68, 68, 57, 0.678);   
   padding: 30px;
   border-radius: 12px;
-  backdrop-filter: blur(4px);             /* glassmorphism effect if browser supports */
+  backdrop-filter: blur(4px);            
   box-shadow: 0 8px 32px rgba(74, 75, 67, 0.555);
 }
 
 .faq-section h1,
 .faq-section h3 {
   color: #ffffff;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);  /* shadow helps readability */
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);  
 }
 
 .faq-section p,
@@ -262,8 +261,8 @@ nav ul li a:hover {
 
 .contact-hero-background {
     position: relative;
-    min-height: 100vh;                /* full viewport height */
-    background-image: url('../images/lostgeen.jpg');  /* ← change to your image path */
+    min-height: 100vh;               
+    background-image: url('../images/lostgeen.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -623,7 +622,7 @@ button[type="submit"]:hover {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.973);
 }
 
-/* MEDIA PAGE LAYOUT */
+
 
 .media-archive {
     padding: 60px 80px;
@@ -631,7 +630,7 @@ button[type="submit"]:hover {
     margin: auto;
 }
 
-/* PAGE TITLE */
+
 
 .media-main h1 {
     font-size: 32px;
@@ -643,7 +642,7 @@ button[type="submit"]:hover {
     margin-bottom: 40px;
 }
 
-/* AUDIO BLOCKS */
+
 
 .audio-block {
     background: #444;
@@ -658,7 +657,7 @@ button[type="submit"]:hover {
     border-left: 3px solid #fff;
 }
 
-/* BLOCK TEXT */
+
 
 .audio-block h4 {
     margin: 0 0 5px 0;
@@ -689,3 +688,4 @@ button[type="submit"]:hover {
 .audio-block audio:hover {
     opacity: 1;
 }
+
